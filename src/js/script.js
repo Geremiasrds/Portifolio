@@ -77,7 +77,7 @@ function abrirComLoading() {
 
   // Redireciona após tempo definido
   setTimeout(() => {
-    window.location.href = 'https://geremiasrds.github.io/jamile-orcamentos/';
+    window.location.href = 'https://geremiasrds.github.io/login-geral/';
   }, 2000);
 }
 
