@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Geremias Rodrigues</title>
+  <link rel="stylesheet" href="src/estilos/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- TOPO FIXO -->
+  <header class="topo-fixo">
+    <h1 class="titulo-nome">Geremias Rodrigues</h1>
+    <p class="sub-info">Desenvolvedor Full-stack • React • Node.js • Git & GitHub</p>
+  </header>
+
+  <div class="espaco-topo"></div>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <div class="container-principal">
+    <div class="descricao-sobre">
+      <p>Desenvolvedor full-stack focado em criar experiências digitais modernas, rápidas e acessíveis.</p>
+      <p>Expert em React e Node.js, entrego soluções escaláveis e eficientes que geram valor real.</p>
+      <p>Apaixonado por inovação, busco desafios para transformar ideias em projetos de impacto.</p>
+    </div>
+
+    <!-- HABILIDADES -->
+    <section class="habilidades">
+      <h2>Minhas Habilidades</h2>
+      <div class="lista-habilidades">
+        <span>⚛️ React</span>
+        <span>🟨 JavaScript</span>
+        <span>🧠 Node.js</span>
+        <span>🗃️ Git & GitHub</span>
+        <span>🌐 HTML</span>
+        <span>🎨 CSS</span>
+      </div>
+    </section>
+  </div>
+
+  <!-- BOTÃO FIXO PARA MENU -->
+  <button id="toggle-projetos" class="botao-toggle">☰</button>
+
+<!-- MENU LATERAL COM PROJETOS -->
+<nav id="menu-projetos" class="menu-projetos escondido">
+  <button id="fechar-menu" class="fechar-menu" aria-label="Fechar menu">✕</button>
+  <div class="lista-de-projetos">
+    <h1>Projetos</h1>
+
+  <div class="card-projeto">
+  <img src="src/imagens/orcamento-preview.jpg" class="imagem-projeto" alt="Preview do App de Orçamentos" />
+  <h4 class="titulo-projeto"><span class="seta">➡</span> 🧾 App de Orçamentos</h4>
+  <div class="conteudo-projeto">
+    <p class="descricao-projeto">Aplicação em React para criação, edição e exportação de orçamentos em PDF. Armazena dados localmente e permite compartilhamento via WhatsApp.</p>
+    
+    <!-- Esse botão só vai aparecer quando expandir -->
+    <a href="#" onclick="abrirComLoading()" class="botao-projeto">Ver Projeto</a>
+  </div>
+</div>
+
+
+    <div class="card-projeto">
+      <img src="src/imagens/pomodoro-preview.jpg" class="imagem-projeto" alt="Preview do Pomodoro App" />
+      <h4 class="titulo-projeto"><span class="seta">➡</span> ⏱️ Pomodoro Task App</h4>
+      <div class="conteudo-projeto">
+        <p class="descricao-projeto">
+          App de tarefas com temporizador estilo Pomodoro, focado em produtividade. Interface moderna e responsiva para celular.
+        </p>
+        <a href="#" class="botao-projeto">Ver Projeto</a>
+      </div>
+    </div>
+
+    <div class="card-projeto">
+      <img src="src/imagens/portfolio-preview.jpg" class="imagem-projeto" alt="Preview do Portfólio" />
+      <h4 class="titulo-projeto"><span class="seta">➡</span> 🌐 Portfólio Responsivo</h4>
+      <div class="conteudo-projeto">
+        <p class="descricao-projeto">
+          Este próprio portfólio feito com HTML, CSS e JavaScript. Design dark, leve, organizado e adaptado para todas as telas.
+        </p>
+        <a href="#" class="botao-projeto">Ver Projeto</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+  <!-- CONTATO -->
+  <footer class="contato">
+    <h2>Contato</h2>
+    <p>Quer conversar ou contratar? Me chama no WhatsApp!</p>
+
+    <form id="form-contato" class="form-contato">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu e-mail" required />
+      <textarea name="mensagem" rows="4" placeholder="Sua mensagem" required></textarea>
+      <button type="submit" class="botao-enviar">Enviar</button>
+    </form>
+
+    <p id="resposta-form" class="resposta-form"></p>
+  </footer>
+
+  <!-- Loader fixo -->
+<div id="loading-overlay" class="loading-overlay escondido">
+  <div class="spinner"></div>
+  <p class="texto-loading">Carregando App de Orçamentos...</p>
+</div>
+
+  <!-- BOTÃO DE CHAT FIXO -->
+  <a href="https://wa.me/5591984572107" target="_blank" class="botao-chat-fixo" title="Fale comigo no WhatsApp">
+    💬 Fale comigo
+  </a>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="src/js/script.js"></script>
+</body>
+</html>
