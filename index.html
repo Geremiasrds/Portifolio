@@ -9,7 +9,6 @@
 </head>
 
 <body>
-  <!-- TOPO FIXO -->
   <header class="topo-fixo">
     <h1 class="titulo-nome">Geremias Rodrigues</h1>
     <p class="sub-info">Desenvolvedor Full-stack • React • Node.js • Git & GitHub</p>
@@ -17,7 +16,6 @@
 
   <div class="espaco-topo"></div>
 
-  <!-- CONTEÚDO PRINCIPAL -->
   <div class="container-principal">
     <div class="descricao-sobre">
       <p>Desenvolvedor full-stack focado em criar experiências digitais modernas, rápidas e acessíveis.</p>
@@ -49,7 +47,6 @@
     <h1>Projetos</h1>
 
   <div class="card-projeto">
-  <img src="src/imagens/orcamento-preview.jpg" class="imagem-projeto" alt="Preview do App de Orçamentos" />
   <h4 class="titulo-projeto"><span class="seta">➡</span> 🧾 App de Orçamentos</h4>
   <div class="conteudo-projeto">
   <p class="descricao-projeto">
@@ -61,33 +58,42 @@
 </div>
 
 
-    <div class="card-projeto">
-      <img src="src/imagens/pomodoro-preview.jpg" class="imagem-projeto" alt="Preview do Pomodoro App" />
-      <h4 class="titulo-projeto"><span class="seta">➡</span> ⏱️ Pomodoro Task App</h4>
-      <div class="conteudo-projeto">
-        <p class="descricao-projeto">
-          App de tarefas com temporizador estilo Pomodoro, focado em produtividade. Interface moderna e responsiva para celular.
-        </p>
-        <a href="#" class="botao-projeto">Ver Projeto</a>
-      </div>
-    </div>
+   <div class="card-projeto">
+  <img src="https://geremiasrds.github.io/pock-devs/src/imagens/pockdevs-preview.png" class="imagem-projeto" alt="Preview do Pock Devs" />
+  <h4 class="titulo-projeto"><span class="seta">➡</span> 🌐 Pock Devs</h4>
+  <div class="conteudo-projeto">
+    <p class="descricao-projeto">
+      O Pock Devs é um site desenvolvido para apresentar de forma clara e atrativa os serviços oferecidos por uma empresa ou profissional, com foco em tecnologia e desenvolvimento web. O projeto destaca-se por:
+    </p>
+    <ul>
+      <li><strong>Design moderno e responsivo:</strong> se adapta a diferentes telas para melhor experiência.</li>
+      <li><strong>Navegação simples e intuitiva:</strong> facilita o acesso às informações essenciais.</li>
+      <li><strong>Uso de tecnologias atuais:</strong> HTML, CSS e JavaScript para interface dinâmica.</li>
+      <li><strong>Foco na identidade visual:</strong> transmite profissionalismo e confiabilidade.</li>
+      <li><strong>Implementação prática:</strong> ideal para divulgação pessoal ou empresarial.</li>
+    </ul>
+    <p>Este site demonstra minha capacidade de criar projetos front-end responsivos, alinhados com as melhores práticas de usabilidade e design.</p>
+    <a href="#" onclick="abrirPockDevs()" class="botao-projeto">Ver Projeto</a>
+
+  </div>
+</div>
+
 
     <div class="card-projeto">
-      <img src="src/imagens/portfolio-preview.jpg" class="imagem-projeto" alt="Preview do Portfólio" />
-      <h4 class="titulo-projeto"><span class="seta">➡</span> 🌐 Portfólio Responsivo</h4>
-      <div class="conteudo-projeto">
-        <p class="descricao-projeto">
-          Este próprio portfólio feito com HTML, CSS e JavaScript. Design dark, leve, organizado e adaptado para todas as telas.
-        </p>
-        <a href="#" class="botao-projeto">Ver Projeto</a>
-      </div>
-    </div>
+  <h4 class="titulo-projeto"><span class="seta">➡</span> 🌐 Site de empresa</h4>
+  <div class="conteudo-projeto">
+    <p class="descricao-projeto">
+      Site institucional responsivo criado para destacar os serviços de refrigeração com design moderno, navegação intuitiva e foco em conversão via WhatsApp.
+    </p>
+    <a href="#" onclick="abrirSiteEmpresa()" class="botao-projeto">Ver Projeto</a>
+  </div>
+</div>
+
 
   </div>
 </nav>
 
 
-  <!-- CONTATO -->
   <footer class="contato">
     <h2>Contato</h2>
     <p>Quer conversar ou contratar? Me chama no WhatsApp!</p>
@@ -102,13 +108,12 @@
     <p id="resposta-form" class="resposta-form"></p>
   </footer>
 
-  <!-- Loader fixo -->
+ 
 <div id="loading-overlay" class="loading-overlay escondido">
   <div class="spinner"></div>
   <p class="texto-loading">Carregando App de Orçamentos...</p>
 </div>
 
-  <!-- BOTÃO DE CHAT FIXO -->
   <a href="https://wa.me/5591984572107" target="_blank" class="botao-chat-fixo" title="Fale comigo no WhatsApp">
     💬 Fale comigo
   </a>

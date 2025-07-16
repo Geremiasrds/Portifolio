@@ -78,7 +78,43 @@ function abrirComLoading() {
   // Redireciona após tempo definido
   setTimeout(() => {
     window.location.href = 'https://geremiasrds.github.io/login-geral/';
-  }, 2000);
+  }, 10);
+}
+
+function abrirSiteEmpresa() {
+  const loader = document.getElementById('loading-overlay');
+  const textoLoading = document.querySelector('.texto-loading');
+
+  if (textoLoading) {
+    textoLoading.textContent = 'Carregando Site da Empresa...';
+  }
+
+  loader.classList.remove('escondido');
+  setTimeout(() => {
+    loader.classList.add('mostrar');
+  }, 10);
+
+  setTimeout(() => {
+    window.location.href = 'https://geremiasrds.github.io/site-de-empresa/';
+  }, 10);
+}
+
+function abrirPockDevs() {
+  const loader = document.getElementById('loading-overlay');
+  const textoLoading = document.querySelector('.texto-loading');
+
+  if (textoLoading) {
+    textoLoading.textContent = 'Carregando Pock Devs...';
+  }
+
+  loader.classList.remove('escondido');
+  setTimeout(() => {
+    loader.classList.add('mostrar');
+  }, 10);
+
+  setTimeout(() => {
+    window.location.href = 'https://geremiasrds.github.io/pock-devs/';
+  }, 10);
 }
 
 
