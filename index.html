@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,85 +41,89 @@
   <!-- BOTÃO FIXO PARA MENU -->
   <button id="toggle-projetos" class="botao-toggle">☰</button>
 
-<!-- MENU LATERAL COM PROJETOS -->
-<nav id="menu-projetos" class="menu-projetos escondido">
-  <button id="fechar-menu" class="fechar-menu" aria-label="Fechar menu">✕</button>
-  <div class="lista-de-projetos">
-    <h1>Projetos</h1>
+  <!-- MENU LATERAL COM PROJETOS -->
+  <nav id="menu-projetos" class="menu-projetos escondido">
+    <button id="fechar-menu" class="fechar-menu" aria-label="Fechar menu">✕</button>
+    <div class="lista-de-projetos">
+      <h1>Projetos</h1>
 
-  <div class="card-projeto">
-  <h4 class="titulo-projeto"><span class="seta">➡</span> 🧾 App de Orçamentos</h4>
-  <div class="conteudo-projeto">
-  <p class="descricao-projeto">
-    Plataforma moderna em React que oferece um sistema completo para gerenciamento de orçamentos, tarefas diárias e recibos. Interface intuitiva, estilizada com design dark elegante, armazenamento local seguro e geração automática de PDFs personalizados. Ideal para profissionais que buscam praticidade, organização e compartilhamento rápido via WhatsApp.
-  </p>
-  <a href="#" onclick="abrirComLoading()" class="botao-projeto">Ver Projeto</a>
-</div>
+      <div class="card-projeto">
+        <h4 class="titulo-projeto"><span class="seta">➡</span> 🧾 App de Orçamentos</h4>
+        <div class="conteudo-projeto">
+          <p class="descricao-projeto">
+            Sistema moderno em React para gerenciar orçamentos, tarefas e recibos. Interface elegante em modo dark,
+            armazenamento local seguro e geração automática de PDFs. Ideal para profissionais organizados e conectados.
+          </p>
+          <a href="#" onclick="abrirComLoading()" class="botao-projeto">Ver Projeto</a>
+        </div>
+      </div>
 
-</div>
+      <div class="card-projeto">
+        <img src="https://geremiasrds.github.io/pock-devs/src/imagens/pockdevs-preview.png" class="imagem-projeto"
+          alt="Preview do Pock Devs" />
+        <h4 class="titulo-projeto"><span class="seta">➡</span> 🌐 Pock Devs</h4>
+        <div class="conteudo-projeto">
+          <p class="descricao-projeto">
+            Site responsivo e moderno para apresentar serviços e portfólio com design limpo e navegação fácil.
+            Desenvolvido com HTML, CSS e JavaScript, focado em usabilidade e identidade visual profissional.
+          </p>
+          <a href="#" onclick="abrirPockDevs()" class="botao-projeto">Ver Projeto</a>
+        </div>
+      </div>
 
+      <div class="card-projeto">
+        <h4 class="titulo-projeto"><span class="seta">➡</span> 🌐 Site de empresa</h4>
+        <div class="conteudo-projeto">
+          <p class="descricao-projeto">
+            Site institucional responsivo para empresa de refrigeração, com design moderno, navegação intuitiva e foco
+            em gerar contato direto via WhatsApp.
+          </p>
+          <a href="#" onclick="abrirSiteEmpresa()" class="botao-projeto">Ver Projeto</a>
+        </div>
+      </div>
 
-   <div class="card-projeto">
-  <img src="https://geremiasrds.github.io/pock-devs/src/imagens/pockdevs-preview.png" class="imagem-projeto" alt="Preview do Pock Devs" />
-  <h4 class="titulo-projeto"><span class="seta">➡</span> 🌐 Pock Devs</h4>
-  <div class="conteudo-projeto">
-    <p class="descricao-projeto">
-      O Pock Devs é um site desenvolvido para apresentar de forma clara e atrativa os serviços oferecidos por uma empresa ou profissional, com foco em tecnologia e desenvolvimento web. O projeto destaca-se por:
-    </p>
-    <ul>
-      <li><strong>Design moderno e responsivo:</strong> se adapta a diferentes telas para melhor experiência.</li>
-      <li><strong>Navegação simples e intuitiva:</strong> facilita o acesso às informações essenciais.</li>
-      <li><strong>Uso de tecnologias atuais:</strong> HTML, CSS e JavaScript para interface dinâmica.</li>
-      <li><strong>Foco na identidade visual:</strong> transmite profissionalismo e confiabilidade.</li>
-      <li><strong>Implementação prática:</strong> ideal para divulgação pessoal ou empresarial.</li>
-    </ul>
-    <p>Este site demonstra minha capacidade de criar projetos front-end responsivos, alinhados com as melhores práticas de usabilidade e design.</p>
-    <a href="#" onclick="abrirPockDevs()" class="botao-projeto">Ver Projeto</a>
-
-  </div>
-</div>
-
-
-    <div class="card-projeto">
-  <h4 class="titulo-projeto"><span class="seta">➡</span> 🌐 Site de empresa</h4>
-  <div class="conteudo-projeto">
-    <p class="descricao-projeto">
-      Site institucional responsivo criado para destacar os serviços de refrigeração com design moderno, navegação intuitiva e foco em conversão via WhatsApp.
-    </p>
-    <a href="#" onclick="abrirSiteEmpresa()" class="botao-projeto">Ver Projeto</a>
-  </div>
-</div>
-
-
-  </div>
-</nav>
-
+    </div>
+  </nav>
 
   <footer class="contato">
     <h2>Contato</h2>
     <p>Quer conversar ou contratar? Me chama no WhatsApp!</p>
-
     <form id="form-contato" class="form-contato">
       <input type="text" name="nome" placeholder="Seu nome" required />
       <input type="email" name="email" placeholder="Seu e-mail" required />
       <textarea name="mensagem" rows="4" placeholder="Sua mensagem" required></textarea>
       <button type="submit" class="botao-enviar">Enviar</button>
     </form>
-
     <p id="resposta-form" class="resposta-form"></p>
-  </footer>
+    <div class="redes-sociais">
+      <a href="https://instagram.com/seuusuario" target="_blank" rel="noopener" aria-label="Instagram"
+        class="rede-link">
+        <span class="icone">📸</span> Instagram
+      </a>
+      <a href="https://linkedin.com/in/seuusuario" target="_blank" rel="noopener" aria-label="LinkedIn"
+        class="rede-link">
+        <span class="icone">💼</span> LinkedIn
+      </a>
+      <a href="https://facebook.com/seuusuario" target="_blank" rel="noopener" aria-label="Facebook" class="rede-link">
+        <span class="icone">📘</span> Facebook
+      </a>
+      <a href="https://github.com/seuusuario" target="_blank" rel="noopener" aria-label="GitHub" class="rede-link">
+        <span class="icone">🐙</span> GitHub
+      </a>
+    </div>
 
- 
-<div id="loading-overlay" class="loading-overlay escondido">
-  <div class="spinner"></div>
-  <p class="texto-loading">Carregando App de Orçamentos...</p>
-</div>
 
-  <a href="https://wa.me/5591984572107" target="_blank" class="botao-chat-fixo" title="Fale comigo no WhatsApp">
-    💬 Fale comigo
-  </a>
+    <div id="loading-overlay" class="loading-overlay escondido">
+      <div class="spinner"></div>
+      <p class="texto-loading">Carregando App de Orçamentos...</p>
+    </div>
 
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="src/js/script.js"></script>
+    <a href="https://wa.me/5591984572107" target="_blank" class="botao-chat-fixo" title="Fale comigo no WhatsApp">
+      💬 Fale comigo
+    </a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="src/js/script.js"></script>
 </body>
+
 </html>
